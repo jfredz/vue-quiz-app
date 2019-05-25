@@ -28,7 +28,12 @@
   	>
   	Submit
   </b-button>
-  <b-button @click="next" variant="success">Next</b-button>
+  <b-button variant="success"
+  	@click="next" 
+  	:disabled="index === 9"
+  	>
+  	Next
+  </b-button>
 	</b-jumbotron>
 </div>
 </template>
@@ -109,6 +114,6 @@
 		background-color: lightgreen;
 	}
 	.wrong {
-		background-color: red;
+		background-color: #ff7f92;
 	}
 </style>
